@@ -19,24 +19,37 @@
     <link rel="stylesheet" href="style.css" />
     <!-- bootdtrap link -->
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <!-- seo and optimization start -->
     <!-- seo and optimization  -->
   </head>
-  <body class="bg-dark">
+  <body class="bg-black">
     <!-- navbar start -->
     <div>
       <nav
-        class="navbar navbar-expand-lg shadow fixed-top fs-4 border-start border-end border-warning border-3"
+        class="navbar navbar-expand-lg shadow fixed-top fs-4 border-start border-end border-warning border-3 rounded"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img
-              class="rounded-circle w-100"
-              src="/image/logo-fotor-bg-remover-20241107154349.png"
+              class="rounded-circle img-fluid mb-4"
+              src="/image/Untitled_Export_V3.png"
               alt=""
             />
           </a>
+          <form class="d-flex me-auto" role="search">
+            <button class="btn btn-lg p-3" type="input">
+              <i class="fa-regular fa-comments text-warning fs-1 fw-bolder"></i>
+            </button>
+            <button class="btn btn-lg" type="submit">
+              <i class="bi bi-search text-warning fs-1 fw-lighter"></i>
+            </button>
+          </form>
           <button
             class="navbar-toggler"
             type="button"
@@ -49,7 +62,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
                 <a
                   class="nav-link active link-warning link-opacity-75-hover"
@@ -69,12 +82,6 @@
                   >Reserch & Reviews</a
                 >
               </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link link-light link-opacity-75-hover" href="#"
-                  >News</a
-                >
-              </li>
-
               <li class="nav-item dropdown ms-3">
                 <a
                   class="nav-link dropdown-toggle link-light link-opacity-75-hover"
@@ -85,55 +92,61 @@
                 >
                   More
                 </a>
-                <ul class="dropdown-menu bg-secondary fs-5">
+                <ul class="dropdown-menu bg-transparent text-body fs-5">
                   <li class="">
-                    <a class="dropdown-item link-warning" href="#">
+                    <a
+                      class="dropdown-item link-warning link-opacity-75-hover bg-transparent"
+                      href="#"
+                    >
                       <i class="fa-solid fa-caret-right me-2"></i
                       ><span>Branches</span></a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a
+                      class="dropdown-item link-light link-opacity-75-hover bg-transparent"
+                      href="#"
                       ><i class="fa-solid fa-caret-right me-2"></i
                       ><span>Investment</span></a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a
+                      class="dropdown-item link-light link-opacity-75-hover bg-transparent"
+                      href="#"
                       ><i class="fa-solid fa-caret-right me-2"></i
                       ><span>Oppertunities</span></a
                     >
                   </li>
                 </ul>
               </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link link-light link-opacity-75-hover" href="#"
+                  >News</a
+                >
+              </li>
             </ul>
-            <form class="d-flex ms-auto" role="search">
-              <input
-                class="form-control me-2 border border-2 border-warning"
-                type="search"
-                placeholder="Search here"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-warning btn-lg" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </div>
     <!-- navbar ends-->
     <!-- background -->
-    <div class="w-100 border-bottom border-warning border-3">
-      <img class="w-100 img-fluid" src="/image/tree-car.jpg" alt="" />
+    <div class="border-bottom rounded border-black border-5 embed-responsive">
+      <video
+        class="rounded border-0 img-fluid"
+        src="/video/car.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
     </div>
+
     <!-- text -->
     <div class="text-center">
-      <h1 class="text-decoration-underline fw-bold text-warning p-3 mt-5">
-        POWER .Inc
-      </h1>
+      <h1 class="display-3 fw-bold text-warning p-3 mt-5">POWER Inc.</h1>
       <br />
 
       <p class="fs-3 text-light">
@@ -149,7 +162,7 @@
     <!-- carousel start -->
     <div
       id="carouselExampleAutoplaying"
-      class="carousel slide container border border-warning border-5"
+      class="carousel slide container border border-warning border-5 rounded"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
@@ -237,7 +250,7 @@
             class="card mb-3 bg-dark border border-2 border-warning text-light"
           >
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 shadow">
                 <img
                   src="/image/grid brands/Audi.png"
                   class="img-fluid rounded m-1"
@@ -245,15 +258,15 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Audi</h2></a
                   >
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                  <p class="card-text fw-light">
+                    Audi AG is a German automotive manufacturer of luxury
+                    vehicles headquartered in Ingolstadt, Bavaria, Germany.
                   </p>
                 </div>
               </div>
@@ -274,15 +287,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Bugatti</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Automobiles Ettore Bugatti was a German then French
+                    manufacturer of high-performance automobiles. The company
+                    was founded in 1909.
                   </p>
                 </div>
               </div>
@@ -303,15 +317,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">BMW</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    The BMW Group, is a German multinational manufacturer of
+                    luxury vehicles and motorcycles headquartered in Munich,
+                    Bavaria, Germany.
                   </p>
                 </div>
               </div>
@@ -332,15 +347,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Ferrari</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Ferrari S.p.A. is an Italian luxury sports car manufacturer
+                    based in Maranello. Founded in 1939 by Enzo Ferrari, the
+                    company built its first car in 1940.
                   </p>
                 </div>
               </div>
@@ -361,15 +377,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Porsche</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Dr. Ing. h.c. F. Porsche AG, usually shortened to Porsche,
+                    is a German automobile manufacturer specializing in luxury,
+                    high-performance cars.
                   </p>
                 </div>
               </div>
@@ -390,15 +407,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Tesla</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    esla, Inc. is an American multinational automotive company.
+                    Headquartered in Austin, Texas, it designs, manufactures and
+                    sells battery electric vehicles.
                   </p>
                 </div>
               </div>
@@ -419,15 +437,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Honda</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Honda Motor Co., Ltd. is a Japanese public multinational
+                    conglomerate manufacturer of automobiles, motorcycles, and
+                    battery-powered equipment.
                   </p>
                 </div>
               </div>
@@ -448,15 +467,17 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Rolls Royce</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Rolls-Royce Holdings plc is a British multinational
+                    aerospace and defence company incorporated in February 2011.
+                    The company owns Rolls-Royce, a business established in
+                    1904.
                   </p>
                 </div>
               </div>
@@ -477,15 +498,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
-                    ><h2 class="card-title fw-bold">Mersedice</h2></a
+                    ><h2 class="card-title fw-bold">Mercedes</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Mercedes-Benz, commonly referred to simply as Mercedes and
+                    occasionally as Benz, is a German luxury and commercial
+                    vehicle brand that was founded in 1926.
                   </p>
                 </div>
               </div>
@@ -506,15 +528,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Land Rovers</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Land Rover is a British brand of predominantly four-wheel
+                    drive, off-road capable vehicles, owned by multinational car
+                    manufacturer Jaguar Land Rover.
                   </p>
                 </div>
               </div>
@@ -535,15 +558,16 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Fords</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Ford Motor Company is an American multinational automobile
+                    manufacturer headquartered in Dearborn, Michigan, United
+                    States.It was founded by Henry Ford.
                   </p>
                 </div>
               </div>
@@ -558,21 +582,22 @@
             <div class="row">
               <div class="col-md-4">
                 <img
-                  src="/image/grid brands/lambergini.png"
+                  src="/image/grid brands/Lamborghini_Logo.svg"
                   class="img-fluid rounded m-1"
                   alt="img not found"
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body p-1">
                   <a
                     href="#"
                     class="link-warning link-offset-3 link-underline-opacity-0 link-underline-opacity-100-hover"
                     ><h2 class="card-title fw-bold">Lamborgini</h2></a
                   >
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a
+                    Automobili Lamborghini S.p.A. is an Italian manufacturer of
+                    luxury sports cars and SUVs based in Sant'Agata
+                    Bolognese.The company is owned by the Volkswagen Group.
                   </p>
                 </div>
               </div>
@@ -584,13 +609,590 @@
 
     <!-- grid end-->
 
+    <!-- brand deals -->
+    <div class="text-center container mt-5">
+      <div class="text-center container mt-5">
+        <h2
+          class="text-warning text-decoration-underline fw-bold text-offset-3"
+        >
+          Checkout Brand New Deals
+        </h2>
+      </div>
+      <div class="w-100">
+        <img class="w-100 img-fluid" src="/image/tree-car.jpg" alt="" />
+      </div>
+    </div>
+    <!-- brand section -->
+    <div class="container text-center mt-5">
+      <div class="row g-4">
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img
+            class="img-fluid"
+            src="/image/red-car-2.jpg"
+            alt="img not found"
+          />
+        </div>
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img
+            class="img-fluid w-100"
+            src="/image/car4.jpg"
+            alt="img not found"
+          />
+        </div>
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img
+            class="img-fluid w-100"
+            src="/image/car5.jpg"
+            alt="img not found"
+          />
+        </div>
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img class="img-fluid" src="/image/images.jpg" alt="img not found" />
+        </div>
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img
+            class="img-fluid"
+            src="/image/5d55be22f4fc24422c1615f2.webp"
+            alt="img not found"
+          />
+        </div>
+        <div
+          class="col col-lg-6 col-sm-12 border rounded border-warning border-1"
+        >
+          <img class="img-fluid" src="/image/sports.jpg" alt="img not found" />
+        </div>
+      </div>
+    </div>
+    <!-- brand deals section ends -->
+    <br />
+    <br />
+    <!-- news section starts  -->
+    <div class="container">
+      <h2 class="display-6 text-warning fw-bold mt-5">NEWS</h2>
+      <p class="text-light mt-3 display-1 fw-bolder text-uppercase">
+        Lamborghini world
+      </p>
+      <img class="img-fluid" src="/image/news/cover.webp" alt="" />
+    </div>
+    <div class="container mt-5">
+      <p class="text-light fs-3 fw-bold">8 November 2024</p>
+      <button type="button" class="btn btn-outline-warning btn-sm">
+        BEYOND
+      </button>
+      <button type="button" class="btn btn-outline-warning btn-sm ms-2">
+        TEMERARIO
+      </button>
+    </div>
+    <div class="container mt-3 d-flex">
+      <h2 class="text-light pe-5 text-uppercase">
+        <span class="vr"></span>
+        Lamborghini introduces unique Apple Vision Pro experience
+      </h2>
+
+      <button class="btn btn-lg btn-outline-warning fw-light">READ MORE</button>
+    </div>
+    <div class="container mt-2">
+      <figcaption class="figure-caption fs-6 text-light">
+        Lamborghini's immersive experience
+        <span class="text-warning">“Unravelling Temerario”</span> debuted at
+        Monterey Car Week
+      </figcaption>
+    </div>
+    <!-- telegram start -->
+    <div class="container p-5 bg-dark mt-5 border rounded border-0 d-flex">
+      <i
+        class="bi bi-telegram btn btn-outline-warning border-3 rounded-circle fs-1 p-5"
+      ></i>
+      <div class="ms-4 mt-3">
+        <h2 class="text-warning fs-3">POWER Inc. TELEGRAM</h2>
+        <p class="text-light fs-1">FOLLOW US ON TELEGRAM</p>
+      </div>
+    </div>
+    <!-- telegram end -->
+    <!-- news LETTER start -->
+
+    <div class="container p-0 border border-0 rounded bg-dark mt-5">
+      <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+          <img
+            class="image-fluid w-100"
+            src="/image/news/cover.webp"
+            alt="Not Found"
+          />
+        </div>
+        <div class="col col-sm-12 col-lg-6 text-start p-3">
+          <figcaption class="figure-caption text-light fw-light mt-3">
+            6 November 2024
+          </figcaption>
+          <button type="button" class="btn btn-outline-warning btn-sm mt-2">
+            BEYOND
+          </button>
+
+          <p class="text-light fs-3 me-2 text-uppercase">
+            Automobile Lamborghini posts record-breaking numbers in the first
+            nine months of 2024
+          </p>
+          <button class="btn btn-lg btn-warning fw-light">READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="container p-0 border border-0 rounded bg-dark mt-5">
+      <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+          <img
+            class="image-fluid w-100"
+            src="/image/news/cover2.webp"
+            alt="Not Found"
+          />
+        </div>
+        <div class="col col-sm-12 col-lg-6 text-start p-3">
+          <figcaption class="figure-caption text-light fw-light">
+            17 October 2024
+          </figcaption>
+          <button type="button" class="btn btn-outline-warning btn-sm mt-2">
+            People
+          </button>
+
+          <p class="text-light fs-3 me-2 text-uppercase">
+            An exchange of generations at the coffee break
+          </p>
+          <button class="btn btn-lg btn-warning fw-light">READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="container p-0 border border-0 rounded bg-dark mt-5">
+      <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+          <img
+            class="image-fluid w-100"
+            src="/image/news/cover_3.webp"
+            alt="Not Found"
+          />
+        </div>
+        <div class="col col-sm-12 col-lg-6 text-start p-3">
+          <figcaption class="figure-caption text-light fw-light">
+            30 September 2024
+          </figcaption>
+          <button type="button" class="btn btn-outline-warning btn-sm mt-2">
+            Driving Programs
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-warning btn-sm mt-2 ms-1"
+          >
+            Urus S
+          </button>
+
+          <p class="text-light fs-3 me-2 text-uppercase">
+            Urus S at Esperienza Avventura Norway through the fjords
+          </p>
+          <button class="btn btn-lg btn-warning fw-light">READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="container p-0 border border-0 rounded bg-dark mt-5">
+      <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+          <img
+            class="image-fluid w-100"
+            src="/image/news/cover4.webp"
+            alt="Not Found"
+          />
+        </div>
+        <div class="col col-sm-12 col-lg-6 text-start p-3">
+          <figcaption class="figure-caption text-light fw-light">
+            19 July 2024
+          </figcaption>
+          <button type="button" class="btn btn-outline-warning btn-sm mt-2">
+            Events
+          </button>
+
+          <p class="text-light fs-3 me-2 text-uppercase">
+            #SheDrivesaLambo: an all-female experience
+          </p>
+          <button class="btn btn-lg btn-warning fw-light">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- news LETTER end -->
+    <!-- load more button start -->
+    <div class="d-grid col-2 mx-auto my-5">
+      <button class="btn btn-outline-warning text-uppercase" type="button">
+        load more
+      </button>
+    </div>
+    <!-- load more button  end-->
+
     <!-- about section starts -->
+    <div
+      class="container p-2 text-center border border-3 border-warning rounded bg-black my-5"
+    >
+      <div class="row">
+        <div class="col col-sm-12 col-lg-6">
+          <img
+            class="image-fluid w-100"
+            src="/image/logo.jpg"
+            alt="Not Found"
+          />
+        </div>
+        <div class="col col-sm-12 col-lg-6">
+          <article
+            class="text-light text-start p-3 fs-4 border bg-dark border-warning border-1 shadow-lg mt-5 me-4"
+          >
+            <span class="display-5 text-warning sw-bold">POWER Inc.</span>
+            we curate dreams on wheels. Nestled in the glitz and glamour of Las
+            Vegas, our flagship branch sets the stage for the finest luxury
+            vehicles from across the globe. We proudly extend our legacy to two
+            vibrant international hubs—São Paulo, Brazil, where the pulse of
+            sophistication beats loud and proud, and Milan, Italy, the fashion
+            capital where style meets speed. Our carefully selected collection
+            embodies power, prestige, and performance. Whether it's the elegance
+            of Heritage S, the bold dominance of Dominator G, or the sleek
+            mystery of Phantom R, each car promises not only a ride but a
+            statement. At POWER Inc., we offer an unparalleled experience for
+            those who crave the extraordinary. Step into a world where luxury
+            knows no limits, only at POWER Inc.
+          </article>
+        </div>
+      </div>
+    </div>
     <!-- about section end -->
 
     <!-- contact form start -->
-    <!-- contact form end -->
+    <div class="container text-light my-5" data-bs-theme="dark">
+      <h2 class="text-uppercase text-warning fw-bold">share your thoughts</h2>
+      <form>
+        <div class="">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter your e-mail address"
+          />
+        </div>
 
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Contact me with news and offers from other Future brands
+          </label>
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Write a comment"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Submit</button>
+      </form>
+    </div>
+    <!-- contact ends -->
+    <!-- comment section starts -->
+    <div class="container p-2 bg-dark my-5 border rounded border-0">
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Funny Valentine -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 November 2024
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">Nice Cars.</figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Gary ashoke -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 April 2024
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">
+            A good collection of cars
+          </figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Nishan Bhuiyan -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 November 2026
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">
+            I want to know more details about audi's.
+          </figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Sam thunder -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 December 2023
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">😍😍🔥</figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Professional Hater -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 July 2024
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">Meh 😏</figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            Mr. Salvador El Torry -
+            <figcaption class="text-secondary figure-caption d-inline">
+              08 November 2024
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">Where am i?</figcaption>
+        </div>
+      </div>
+      <hr class="text-secondary" />
+      <div class="d-flex">
+        <i
+          class="fa-solid fa-user text-warning fs-5 border border-secondary bg-secondary border-3 rounded-circle p-3"
+        ></i>
+        <div class="p-2 ms-3">
+          <h6 class="text-warning my-0">
+            KIng Kaguzaka -
+            <figcaption class="text-secondary figure-caption d-inline">
+              02 June 2024
+            </figcaption>
+          </h6>
+
+          <figcaption class="figure-caption text-light">
+            Wow good collection👏
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <!-- comment section ends -->
+    <!-- load more button start-->
+    <div class="d-grid col-2 col-sm-8 mx-auto">
+      <button class="btn btn-outline-warning text-uppercase" type="button">
+        more comments
+      </button>
+    </div>
+    <!-- load more button end -->
+    <br />
+    <!-- footer start -->
+    <footer class="container-fluid bg-dark mt-5 py-3">
+      <div class="icon text-warning py-4 ps-5 fs-1">
+        <a href="#" class="link link-warning link-opacity-75-hover"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="link link-warning link-opacity-75-hover"
+          ><i class="fa-brands fa-reddit"></i
+        ></a>
+        <a href="#" class="link link-warning link-opacity-75-hover">
+          <i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="link link-warning link-opacity-75-hover">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="link link-warning link-opacity-75-hover">
+          <i class="bi bi-telegram"></i
+        ></a>
+      </div>
+      <div class="row ps-5">
+        <div class="col col-lg-1 col-sm-3 p-0">
+          <p class="text-secondary fw-bold">Resources</p>
+          <p class="my-1">
+            <a
+              href="#"
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+              >Wish-A-Light</a
+            >
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              A-Clean-World
+            </a>
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              Company
+            </a>
+          </p>
+        </div>
+        <div class="col col-lg-1 col-sm-3 p-0">
+          <p class="text-secondary fw-bold invisible">Resources</p>
+          <p class="my-1">
+            <a
+              href="#"
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+              >UX Reserch</a
+            >
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              Intership
+            </a>
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              la Motore
+            </a>
+          </p>
+        </div>
+        <div class="col col-lg-1 col-sm-3 p-0">
+          <p class="text-secondary fw-bold">Others</p>
+          <p class="my-1">
+            <a
+              href="#"
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+              >Cshevle festa</a
+            >
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              Branches
+            </a>
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              Reserch
+            </a>
+          </p>
+        </div>
+        <div class="col col-lg-1 col-sm-3 p-0">
+          <p class="text-secondary fw-bold invisible">Resources</p>
+          <p class="my-1">
+            <a
+              href="#"
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+              >Partners</a
+            >
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              Power Newsroom
+            </a>
+          </p>
+          <p class="my-1">
+            <a
+              class="link link-light link-opacity-75-hover link-underline-opacity-0 figure-caption my-0"
+            >
+              EULA
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid ps-4">
+        <hr class="text-light" />
+      </div>
+      <div class="container-fluid ps-4 text-secondary">
+        <div class="row">
+          <div class="col col-lg-6 col-sm-12">
+            <p class="">
+              &copy POWER Inc. All Rights Reserved. POWER Inc., the premier
+              destination for discerning luxury car enthusiasts, is committed to
+              offering an unparalleled selection of exclusive, high-end
+              vehicles. With branches in Las Vegas, São Paulo, and Milan, we
+              proudly deliver world-class service and the finest automotive
+              options. Unauthorized use, reproduction, or distribution of
+              content on this site is strictly prohibited. At POWER Inc., we
+              elevate the luxury car experience—your journey with us is as
+              refined as the vehicles we provide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 ps-2">
+        <a
+          href="#"
+          class="link link-underline-opacity-0 link-opacity-75-hover link-light px-3"
+          >Term of Services</a
+        >
+        <a
+          href="#"
+          class="link link-underline-opacity-0 link-opacity-75-hover link-light px-3"
+          >Privacy Policy</a
+        >
+        <a
+          href="#"
+          class="link link-underline-opacity-0 link-opacity-75-hover link-light px-3"
+          >Our Customer Policy</a
+        >
+      </div>
+    </footer>
+    <!-- footer end -->
     <!-- bootstarp script -->
     <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+
+    <footer class="container-fluid bg-dark"></footer>
   </body>
 </html>
